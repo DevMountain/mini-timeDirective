@@ -48,3 +48,18 @@ Remember to include ng-app in your html and call your module 'timeApp'. Also, re
   The current time is Sun Dec 07 2014 22:03:12 GMT-0700 (MST)
 ```
 * If you don't see that, check your console and start debugging.
+* Your final timeDirective.js file should look like this
+```javascript
+var app = angular.module('timeApp');
+
+app.directive('showTime', function(){
+  return {
+    restrict: 'E',
+    template: '<div> The current time is {{time}} </div>',
+    link: function(scope, element, attrs){
+      var currentTime = new Date();
+      scope.time = currentTime.toString();
+    }
+  }
+});
+```
