@@ -1,0 +1,32 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background: url("tweed.png");
+	font-family: 'Raleway', sans-serif;
+	color: #FFF;
+	text-align: center;
+}
+
+.name {
+	
+	
+	font-size: 80px;
+	padding-top: 10%;
+	padding-bottom: 24px;
+	font-weight: 100;
+	
+}
+
+.time {
+	font-size: 144px;
+	font-weight: 400;
+}
+
+.date {
+	font-size: 48px;
+}
+
+.lead-in {
+	font-size: 32px;
+}
