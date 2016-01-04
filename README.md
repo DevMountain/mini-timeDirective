@@ -8,7 +8,7 @@ The purpose of this Mini Project is to get you used to creating custom Directive
 * Fork this repo, then clone your fork.
 * Create the basics of your Angular application. Your file structure should look like this
 ```
-  mini-routing
+  mini-time-directive
     index.html
     js
       app.js
