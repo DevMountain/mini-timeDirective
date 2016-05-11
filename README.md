@@ -29,7 +29,7 @@ Remember to include ng-app in your html and call your module 'timeApp'. Also, re
 * Go ahead and create your module
 * Now, add a directive property onto your app giving it a string, which represents  the name of your directive, call it 'showTime' as the first argument. The second argument is a callback function that will return an object. The skeleton of your directive should look something like this.
 ```javascript
-  angular.module('moduleName').directive('showTime', function(){
+  angular.module('timeApp').directive('showTime', function(){
   return {
 
   }
