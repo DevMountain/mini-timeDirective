@@ -8,7 +8,7 @@ The purpose of this Mini Project is to get you used to creating custom Directive
 * Fork this repo, then clone your fork.
 * Create the basics of your Angular application. Your file structure should look like this
 ```
-  mini-routing
+  mini-time-directive
     index.html
     js
       app.js
@@ -26,10 +26,10 @@ Remember to include ng-app in your html and call your module 'timeApp'. Also, re
 * This directive is going to display 'The current time is ' + whatever the current time is. Although this is a small example, think of the bigger picture here. Now we can throw in this ```<show-time></show-time>``` directive anywhere in our application without having to recreate code.
 * Now it's time to actually build the directive. Double check that you're not getting any errors in your console before we move on.
 * Head over to timeDirective.js
-* Go ahead and get your module
+* Go ahead and get your module, setting it equals to a variable called 'app'
 * Now, add a directive property onto your app giving it a string, which represents  the name of your directive, call it 'showTime' as the first argument. The second argument is a callback function that will return an object. The skeleton of your directive should look something like this.
 ```javascript
-  app.directive('showTime', function(){
+  angular.module('timeApp').directive('showTime', function(){
   return {
 
   }
@@ -50,9 +50,7 @@ Remember to include ng-app in your html and call your module 'timeApp'. Also, re
 * If you don't see that, check your console and start debugging.
 * Your final timeDirective.js file should look like this
 ```javascript
-var app = angular.module('timeApp');
-
-app.directive('showTime', function(){
+angular.module('timeApp').directive('showTime', function(){
   return {
     restrict: 'E',
     template: '<div> The current time is {{time}} </div>',
@@ -63,3 +61,7 @@ app.directive('showTime', function(){
   }
 });
 ```
+
+## Copyright
+
+© DevMountain LLC, 2016. Unauthorized use and/or duplication of this material without express and written permission from DevMountain, LLC is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to DevMountain with appropriate and specific direction to the original content.
